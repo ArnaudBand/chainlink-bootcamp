@@ -1,59 +1,66 @@
-# Chainlink Bootcamp 2024
+## Foundry
 
-Welcome to the Chainlink Bootcamp 2024! This repository contains exercises, smart contracts, and resources for participants in the bootcamp. Whether you're new to blockchain development or an experienced coder, we've got something for you.
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-## Table of Contents
+Foundry consists of:
 
-1. [About](#about)
-2. [Sessions](#sessions)
-3. [Getting Started](#getting-started)
-4. [Resources](#resources)
+-   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+-   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+-   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+-   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-## About
+## Documentation
 
-The Chainlink Bootcamp 2024 is a comprehensive program designed to help you learn and build with Chainlink. From blockchain concepts to oracles, NFTs, and more, we cover a wide range of topics.
+https://book.getfoundry.sh/
 
-## Sessions
+## Usage
 
-### Session 1: Blockchain Concepts and Wallets
+### Build
 
-- **Objective**: Learn about blockchain fundamentals and set up your wallet.
-- **Topics Covered**:
-    - Understanding the blockchain architecture.
-    - Creating a Metamask wallet.
-    - Funding your wallet with Sepolia ETH.
-- **Folder**: `session1_blockchain_concepts`
+```shell
+$ forge build
+```
 
-### Session 2: Solidity Fundamentals
+### Test
 
-- **Objective**: Dive into Solidity basics and explore smart contract development.
-- **Topics Covered**:
-    - Solidity syntax and data types.
-    - Writing your first smart contract.
-    - Deploying and interacting with contracts.
-- **Folder**: `session2_solidity_fundamentals`
+```shell
+$ forge test
+```
 
-### Session 3: Oracles, ERC20 Tokens, and Chainlink Data Feeds
+### Format
 
-- **Objective**: Understand oracles and their role in decentralized applications.
-- **Topics Covered**:
-    - Introduction to oracles.
-    - Creating an ERC20 token contract.
-    - Integrating Chainlink data feeds.
-- **Folder**: `session3_oracles_erc20_chainlink`
+```shell
+$ forge fmt
+```
 
-### Session 4: Chainlink CCIP
+### Gas Snapshots
 
-- **Objective**: Understand CCIP.
+```shell
+$ forge snapshot
+```
 
+### Anvil
 
-## Getting Started
+```shell
+$ anvil
+```
 
-1. Clone this repository to your local machine.
-2. Follow the instructions in each session's folder to complete the exercises.
-3. Join our Discord community for support and discussions: [Discord Link](https://discord.gg/NqW5NWHB).
+### Deploy
 
-## Resources
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
 
-- [Chainlink Documentation](https://docs.chain.link/)
-- [Chainlink Developer Hub](https://chain.link/bootcamp)
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
