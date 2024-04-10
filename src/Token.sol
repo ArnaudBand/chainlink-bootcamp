@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-// Address: 0xeb7Aac3285C05FE1a7c70CEbEeb3659D17b77a6b
+// Contract Address: 0xeb7Aac3285C05FE1a7c70CEbEeb3659D17b77a6b
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
