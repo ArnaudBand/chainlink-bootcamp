@@ -5,7 +5,7 @@ pragma solidity 0.8.19;
 
 // Contract Address: 0xDaE05B1fd78E6d642d125Ed1627736E0822B577A
 
-import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 interface TokenInterface {
     function mint(address account, uint256 amount) external;
